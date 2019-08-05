@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="xzTip">
+    <meta name="author" content="calvin">
+
+    <title>xzTip - jQuery Plugin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="https://v3.bootcss.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">jQuery xzTip Plugin 更新日志</h1>
+        <p class="lead blog-description">提供鼠标悬停、点击等事件的信息提示，支持图片、文本风格展示。</p>
+        <hr>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-9 blog-main">
+
+          <div class="blog-post">
+            <h2>0.x </h2>
+            <hr>
+            <h3>0.1.1 [2019-8-5]</h3>
+            <ol>
+              <li>[新增]版本更新日志；</li>
+              <li>[修改]示例文档；</li>
+              <li>[BUG]解决多个选择符调用此插件时，若第一个绑定的提示层未完全关闭，鼠标移入第二个控件时，提示层会出现打开-关闭，又打开的现象。</li>
+              <li>[优化]代码优化。</li>
+            </ol>
+
+            <h3>0.1.0 [2019-7-31]</h3>
+            <ol>
+              <li>支持不同的打开触发方式：鼠标移入、左键单击等；</li>
+              <li>支持不同的关闭触发方式：鼠标移出、关闭按钮、ESC按键等；</li>
+              <li>支持展示文本和图片类型的数据格式；</li>
+              <li>支持两种展示模式：吸附模式，即吸附于某一个控件周围；窗口模式，即居于浏览器容器正中；</li>
+              <li>其他功能请参见 <a href="example.html" target="_blank">示例</a>。</li>
+            </ol>
+
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 blog-sidebar">
+          <div class="sidebar-module">
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>© 2019 calvin | This page was proudly built with <a href="http://www.getbootstrap.com">Twitter's Bootstrap</a></p>
+    </footer>
+
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

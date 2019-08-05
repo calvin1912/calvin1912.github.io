@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-    <link href="dist/jquery.xzTip.css" rel="stylesheet">
+    <link href="http://raw.githack.com/calvin1912/xzTip/master/dist/jquery.xzTip.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,7 +40,7 @@
     <div class="container">
 
       <div class="blog-header">
-        <h1 class="blog-title">jQuery xzTip Plugin</h1>
+        <h1 class="blog-title">jQuery xzTip Plugin 示例</h1>
         <p class="lead blog-description">提供鼠标悬停、点击等事件的信息提示，支持图片、文本风格展示。</p>
         <hr>
       </div>
@@ -51,7 +51,7 @@
 
           <div class="blog-post">
             <h2>1 版本</h2>
-            <p class="blog-post-meta">版本号：v0.1<br/>发布时间：2019年7月</p>
+            <p class="blog-post-meta">版本号：v0.1.1<br/>发布时间：2019-8-5</p>
   
             <h2>2 引用</h2>
             <p>
@@ -113,10 +113,10 @@
             <p><input id="demo321" type="text" value="左上角-左下角">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input id="demo322" type="text" value="左上角-右下角"></p>
-<pre><code>$('#demo311').xzTip({adsorptionPos:'LU|LU'});
-$('#demo312').xzTip({adsorptionPos:'LU|RU'});
-$('#demo321').xzTip({adsorptionPos:'LU|LL'});
-$('#demo322').xzTip({adsorptionPos:'LU|RL'});</code></pre>
+<pre><code>$('#demo311').xzTip({width:100, adsorptionPos:'LU|LU'});
+$('#demo312').xzTip({width:100, adsorptionPos:'LU|RU'});
+$('#demo321').xzTip({width:100, adsorptionPos:'LU|LL'});
+$('#demo322').xzTip({width:100, adsorptionPos:'LU|RL'});</code></pre>
 
             <h3>4.8 图片显示模式</h3>
             <p><input id="demo331" type="text" value="imgs/logo-64.png"> <input id="demo332" type="text" value="imgs/logo-256.png"></p>
@@ -329,10 +329,9 @@ $('#demo322').xzTip({adsorptionPos:'LU|RL'});</code></pre>
     <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="dist/jquery.xzTip.js"></script>
+    <script src="http://raw.githack.com/calvin1912/xzTip/master/dist/jquery.xzTip.js"></script>
     <script src="script.js"></script>
     <script type="text/javascript">
-      //LU、LL、RU、RL分别代表左上、左下、右上、右下
       $(function(){
         $('#demo1').xzTip({overlay:true});
 
@@ -343,10 +342,10 @@ $('#demo322').xzTip({adsorptionPos:'LU|RL'});</code></pre>
         
         $('#demo301').xzTip({adsorptionTo: '#demo302'});
 
-        $('#demo311').xzTip({adsorptionPos:'LU|LU'});
-        $('#demo312').xzTip({adsorptionPos:'LU|RU'});
-        $('#demo321').xzTip({adsorptionPos:'LU|LL'});
-        $('#demo322').xzTip({adsorptionPos:'LU|RL'});
+        $('#demo311').xzTip({width:100, adsorptionPos:'LU|LU'});
+        $('#demo312').xzTip({width:100, adsorptionPos:'LU|RU'});
+        $('#demo321').xzTip({width:100, adsorptionPos:'LU|LL'});
+        $('#demo322').xzTip({width:100, adsorptionPos:'LU|RL'});
 
         $('#demo331,#demo332').xzTip({dataType:'image'});
         $('#demo341').xzTip({
